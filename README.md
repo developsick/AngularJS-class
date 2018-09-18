@@ -21,3 +21,9 @@
  - declaratively binds the model of the viewmodel to the view
  - declaratively means you don'y have to write any code(the framework does this thing)
  - key enabler of the whole MVVM pattern
+
+##2. Dependency Injection (DI)
+ - design pattern that implements incersion of control for resolving dependencies
+ - client gets called with eht dependendy by some system
+ - client is not responsible for instantiate the dependency
+ - (don't call us, we'll call you)
