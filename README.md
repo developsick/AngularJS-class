@@ -1,7 +1,7 @@
 # Single Page Web Applications with AngularJS(Coursera)
 (course github : https://github.com/jhu-ep-coursera/fullstack-course5/)
 # WEEK1
-##1. MVVM pattern
+## 1. MVVM pattern
 ### Model(javascript) - data / business logic
  - represents and holds raw data
  - some of hits data may be displayed in the view
@@ -22,7 +22,7 @@
  - declaratively means you don'y have to write any code(the framework does this thing)
  - key enabler of the whole MVVM pattern
 
-##2. Dependency Injection (DI)
+## 2. Dependency Injection (DI)
  - design pattern that implements incersion of control for resolving dependencies
  - client gets called with eht dependendy by some system
  - client is not responsible for instantiate the dependency
