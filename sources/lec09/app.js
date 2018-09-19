@@ -17,12 +17,12 @@
         console.log($injector.annotate(DIController));
     }
 
-    function AnnotateMe (name, job, blah) {
-      return "Blah!!"
-
-    };
-
+    function annotateMe(name, job, blah) {
+        return "blah!"
+    }
 
     console.log(DIController.toString());
 
 })();
+
+
