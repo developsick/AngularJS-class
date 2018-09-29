@@ -71,3 +71,12 @@
  - to user filter chaining
    * {{ expression | filter1 | filter2 ... }}
    * result of the filter1 becomes to an input of filter2
+
+## 2. Digest Cycles
+ - digest cycle : running digest loops until all watchers report that nothing has changed
+   * dirty checking
+ - several ways to set up watchers:
+   * $scope.$watch : bad way(because controllers and templates have their own ways to deal with watchers and set them up)
+   * {{ someProperty }}
+   * <input ... ng-model="someProperty" ...>
+ - only applied to things done inside of the Angular context
