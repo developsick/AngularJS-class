@@ -52,3 +52,11 @@
      + Messege is hello
  - still connected to the original messege property
    * if $scope.messege changes, so will interpolation result
+
+
+# WEEK2
+
+## 1. Filter Function
+ - define filter factory function
+ - register filter factory with module
+ - (javascript) inject it with nameFilter

@@ -4,12 +4,18 @@
 angular.module('MsgApp', [])
 .controller('MsgController', MsgController);
 
-MsgController.$inject = ['$scope'];
-function MsgController($scope) {
+MsgController.$inject = ['$scope', '$filter'];
+function MsgController($scope, $filter) {
   $scope.name = "Jin";
   $scope.stateOfBeing = "fire";
+  $scope.cost = .45;
+
+
+
   $scope.sayMessege = function () {
-    return "is saying messeges";
+    var msg = "is saying messeges";
+    var output = $filter('uppercase')(msg);
+    return output;
   };
 
   $scope.flip = function () {
