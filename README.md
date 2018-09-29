@@ -57,6 +57,17 @@
 # WEEK2
 
 ## 1. Filter Function
- - define filter factory function
- - register filter factory with module
- - (javascript) inject it with nameFilter
+ - steps to create a custom filter
+   * define filter factory function
+   * register filter factory with module
+ - to use custom filter in Javascript
+   * inject filter function registeredNameFilter into controller
+ - to use in HTML : no need to inject into controller
+   * {{ expression | registeredName }}
+ - extra arguments can be supplied to the filter function
+   * otherwise, steps are the same for registration & injection
+ - to use in HTML with extra arguments
+   * {{ expression | registeredName : arg1, arg2... }}
+ - to user filter chaining
+   * {{ expression | filter1 | filter2 ... }}
+   * result of the filter1 becomes to an input of filter2
