@@ -85,3 +85,12 @@
    * call $digest after custom code (bad way)
    * wrap custom code inside of $apply
    * find angular specific service that handles the same functionality (ex: $timeout)
+ - 2-way binding (ng-model) means:
+   * listener for change on input automatically set up by Angular updates property value on $scope
+   * direct update to property value is automatically updated in UI
+ - 1-way binding ( {{ property }} ) means:
+   * direct update to property value is updated in UI
+ - 1-time binding ( {{ ::property }} ) means:
+   * initialized value of property is automatically updated in UI
+   * watcher for property is removed, so UI never again gets updated
+
