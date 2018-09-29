@@ -80,3 +80,8 @@
    * {{ someProperty }}
    * <input ... ng-model="someProperty" ...>
  - only applied to things done inside of the Angular context
+ - digest cycle does not get triggered automatically if events are unaware of Angular
+ - solution:
+   * call $digest after custom code (bad way)
+   * wrap custom code inside of $apply
+   * find angular specific service that handles the same functionality (ex: $timeout)
